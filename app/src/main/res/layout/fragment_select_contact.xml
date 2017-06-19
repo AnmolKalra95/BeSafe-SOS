@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_margin="10dp"
+
+        >
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:id="@+id/crd_btn_login"
+        app:cardCornerRadius="10dp"
+        android:layout_gravity="left"
+          >
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_bg"
+            android:text="Open Contacts"
+            android:id="@+id/contacts"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:textColor="@color/tabtxtcolor"
+            />
+    </android.support.v7.widget.CardView>
+    <!--<android.support.v7.widget.CardView
+        android:layout_width="170dp"
+        android:layout_height="32dp"
+        android:id="@+id/crd_btn_signup"
+       android:layout_gravity="right"
+        app:cardCornerRadius="10dp"
+        android:layout_marginLeft="10dp"
+
+        >
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/button_bg"
+            android:text="Next"
+            android:id="@+id/next"
+
+            android:textSize="15sp"
+            android:textColor="@color/tabtxtcolor"
+            android:padding="5dp"
+
+            />
+    </android.support.v7.widget.CardView>-->
+    </LinearLayout>
+<GridView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/selected_contact_list"
+    android:numColumns="2"
+    ></GridView>
+</LinearLayout>
